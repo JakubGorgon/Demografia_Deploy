@@ -146,7 +146,7 @@ def main():
             legend=dict(font=dict(size=16))
         )
 
-        st.markdown(f"### Liczba ludności w prowincjach Kanady w {int(geo_df["Rok"].unique())}:")
+        st.markdown(f"### Liczba ludności w prowincjach Kanady w {int(geo_df['Rok'].unique())}:")
         st.write(f"* **{liczba_ludnosci_ogolem}** mieszkańców w całej Kanadzie")
         st.write(f"* **{max_prowincja.iloc[0,0]}** najbardziej liczną prowincją ({max_prowincja.iloc[0,1]} mieszkańców)")
         st.write(f"* **{min_prowincja.iloc[0,0]}** najmniej liczną prowincją ({min_prowincja.iloc[0,1]} mieszkańców)")
@@ -201,7 +201,7 @@ def main():
             margin={"r": 0, "t": 0, "l": 0, "b": 0},
             legend=dict(font=dict(size=16)),
             xaxis=dict(
-                tickfont=dict(size=16) 
+                tickfont=dict(size=14) 
             ),
             yaxis=dict(
                 tickfont=dict(size=16)
